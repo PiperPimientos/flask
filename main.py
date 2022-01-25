@@ -1,6 +1,9 @@
+from ensurepip import bootstrap
 from flask import Flask, request, make_response, redirect, render_template
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+bootstrap = Bootstrap(app)
 
 todos = ['TODO 1', 'TODO 2', 'TODO 3']
 
