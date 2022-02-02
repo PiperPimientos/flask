@@ -53,6 +53,3 @@ def hello():
 
     return render_template('hello.html', **context)
 
-if __name__ == "__main__":
-	app.run(debug=True)
-
